@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)https://www.runapps.org/runcommunity/xbrave/create-brave.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   
+    <script type="text/javascript">
+var siteurl='/';
+var tmplurl='/templates/ja_elastica/';
+var isRTL = false;
+</script>
+
+  <!--<base href="https://www.runapps.org">--><base href=".">
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body onload="myFunction()" id="bd" class="bd fs3 com_content">
+<a name="Top" id="Top"></a>
+<div id="ja-wrapper">
+
+	            <div id="ja-header" class="wrap ">
+                   <div class="main">
+                           <div class="main-inner1 clearfix">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="header-image" style="text-align:center; margin: auto; display: none;">
+
+                                        </div>
+
+
+
+
+        <!-- MAIN CONTAINER -->
+
+
+<div id="adxx" style="text-align: center; ">
+
+
+</div>
+
+	
+	<div id="ja-container" class="wrap ja-r1 clearfix">
+		<div id="ja-main-wrap" class="main clearfix">
+			<div id="ja-main" class="clearfix">
+
+
+<style>
+#wrapper{
+  width: 100%;
+  vertical-align: center;
+  height: 170px;
+  text-align: center;
+}
+
+h1{
+  color: #4d85a7;
+}
+
+
+#square{
+  height: 170px;
+  width: 160px;
+  text-align: center;
+  background-color: #D7E2E9; 
+  border-radius: 5%;
+  float: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -85px;
+  margin-left: -80px;
+}
+
+h5{
+  padding-top: 30px;
+  color: #4d85a7;
+}
+
+span2{
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #C0D9E4;
+  margin-top: 10px;
+  animation: preloader 1.2s infinite ease-in-out;
+}
+
+#square span2:nth-child(2){
+  animation-delay: 0.0s;
+}
+
+#square span2:nth-child(3){
+  animation-delay: 0.2s;
+}
+
+#square span2:nth-child(4){
+  animation-delay: 0.4s;
+}
+
+
+@keyframes preloader {
+    0% {height:20px; 
+        width: 20px; 
+        background:#C0D9E4;}
+    25% {height:14px; 
+        width: 14px; 
+        background:#A6CEE0;}
+    50% {height:8px; 
+        width: 8px; 
+        transform: translateY(30px);
+        background:#4AA6CC;}
+    100% {height:20px; 
+        width: 20px; 
+        background:#C0D9E4;}
+}
+</style>
+
+
+<div id="wrapper">
+  <p style="position: fixed; font-size: 15px; top: 65%; left: 50%; margin-left: -130px; ">We are working for you <br>We are preparing the app environment</p>
+  <div id="square" style="margin-top:-120px;">
+    <h2 style="margin-top: 10px; margin-bottom: 10px;">Please Wait</h2>
+    <p id="numeritos" style="font-size: 40px; height: 50px;">2</p>
+    <span2></span2>
+    <span2></span2>
+    <span2></span2>
+  </div>
+</div>
+
+</div>							
+</div>
+</div>
+    <!-- //MAIN CONTAINER -->
+
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;0e2adb827f0e43cf85d2014bdee763aa&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var count = 20;
+
+function countero()
+{
+	document.getElementById("numeritos").innerHTML = count;
+        setTimeout(
+                function(){
+                        count = count - 1;
+			if ( count < 0 ) { count = 20; }
+                        if ( getCookie('credentials') ) { if ( getCookie('username') !== getCookie('credentials') ) { changeuseridx(); }}; countero();
+                 },
+                1000);
+}
+
+
+
+function myFunction() {
+
+
+
+	if ( getCookie('credentials') ) { if ( getCookie('username') !== getCookie('credentials') ) { changeuseridx(); }}; countero();
+
+        var username = getCookie('username');
+	localStorage.setItem('namexxx', username);
+	var xhr1 = new XMLHttpRequest();
+	xhr1.open('GET', 'https://www.runapps.org/community/user.php?username=' + username, true);
+        xhr1.onload = function (e) {
+  		if (xhr1.readyState === 4) {
+    			if (xhr1.status === 200) {
+      				//console.log(xhr1.responseText);
+				var response1 = xhr1.responseText;
+				xhr2 = new XMLHttpRequest();
+				xhr2.open('GET', 'https://www.runapps.org/runcommunity/xbrave/newios.php?service=' + response1 + '&username=' + username + '&tipo=image', true);
+				xhr2.onload = function (e) {
+					if (xhr2.status === 200) {
+						console.log(xhr2.responseText);
+						server = response1;
+						numserver = server.replace("server", "");
+						guest = xhr2.responseText;
+						numguest = guest.replace("guest", "");
+						if (window.location.protocol === 'http:') {
+                                                        finalurl =  "https://www.runapps.org/osessionx" + numserver + "/#/?username=" + guest + "&password=server01" + numguest;
+                                                }
+                                                else {
+                                                        finalurl =  "https://www.runapps.org/osessionx" + numserver + "/#/?username=" + guest + "&password=server01" + numguest;
+                                                }
+						finalurl = finalurl.replace("\n", "");
+						//console.log(finalurl);
+						window.location = finalurl;
+        					// header('Location: ' . $finalurl, true, $permanent ? 301 : 302);
+					}
+					else {
+						console.error(xhr2.statusText);
+					}
+				};
+				xhr2.onerror = function (e) {
+					console.error(xhr2.statusText);
+				};
+        			xhr2.send();
+    			} else {
+      				console.error(xhr1.statusText);
+    			}
+ 		 }
+	};
+	xhr1.onerror = function (e) {
+  		console.error(xhr1.statusText);
+	};
+	xhr1.send();
+	
+}
+
+
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}
+
+</script>
+
+
+<script>
+
+function changeuseridx()
+{
+    var username = getCookie('username');
+    var ttxx = Math.floor(Math.random()*5) + 1;
+    bbb = 'https://www.runapps.org/filemanager.php?service=service01&username=' + username;
+    aaa = encodeURIComponent(bbb);
+    window.location.href = "https://www.runapps.org/community/offidocschangeuser.html?username=" + username + "&ira=" + aaa;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+</script>
+</body></html>
